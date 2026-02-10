@@ -1,4 +1,4 @@
-# 🧠 TOPSIS-Based Evaluation of Text Generation Models  
+#  Topsis for pre train model 
 **Course Assignment**  
 **Student Name:** Himanshu Bansal  
 **Roll No:** 102303786  
@@ -6,14 +6,14 @@
 
 ---
 
-## 🎯 Objective
+##  Objective
 The objective of this assignment is to **apply the TOPSIS method (Technique for Order of Preference by Similarity to Ideal Solution)** to identify the **best pre-trained Text Generation model** among a given set of alternatives.
 
 The task involves comparing multiple **pre-trained models** using different **performance metrics**, assigning weights to these metrics, and applying the **TOPSIS algorithm** to rank them.
 
 ---
 
-## 🧩 Why TOPSIS?
+##  Why TOPSIS?
 TOPSIS is a **multi-criteria decision-making (MCDM)** technique used to find the best option among several alternatives when there are multiple conflicting criteria.  
 It ranks alternatives based on their **closeness to the ideal best** and **distance from the ideal worst** solution.
 
@@ -28,14 +28,14 @@ It ranks alternatives based on their **closeness to the ideal best** and **dista
 
 ---
 
-## 🧠 Problem Description
+##  Problem Description
 Text generation refers to automatically creating meaningful text given an input prompt using pre-trained language models.  
 Many large models exist today (GPT-2, T5, BLOOM, etc.), each having different trade-offs in terms of **accuracy**, **fluency**, and **efficiency**.  
 This project applies **TOPSIS** to objectively compare and rank them.
 
 ---
 
-## 🧮 Models Considered
+##  Models Considered
 | Model | Description |
 |--------|-------------|
 | **GPT-2** | Transformer-based model by OpenAI for generating coherent text |
@@ -46,7 +46,7 @@ This project applies **TOPSIS** to objectively compare and rank them.
 
 ---
 
-## 📊 Evaluation Criteria
+##  Evaluation Criteria
 | Criteria | Description | Type |
 |-----------|--------------|------|
 | **Perplexity** | Measures model fluency (lower is better) | Cost |
@@ -57,7 +57,7 @@ This project applies **TOPSIS** to objectively compare and rank them.
 
 ---
 
-## 🧾 Decision Matrix (Sample Data)
+##  Decision Matrix (Sample Data)
 > The below values are used for evaluation based on approximate benchmark results or relative assumptions.
 
 | Model | Perplexity | BLEU | ROUGE-L | Inference Time (s) | Size (GB) |
@@ -70,7 +70,7 @@ This project applies **TOPSIS** to objectively compare and rank them.
 
 ---
 
-## ⚖️ Criteria Weights
+##  Criteria Weights
 | Criteria | Weight |
 |-----------|---------|
 | Perplexity | 0.25 |
@@ -83,7 +83,7 @@ This project applies **TOPSIS** to objectively compare and rank them.
 
 ---
 
-## 💻 Implementation
+##  Implementation
 The project is implemented using **Python** with:
 - `numpy` – numerical computation  
 - `pandas` – data manipulation  
@@ -99,7 +99,7 @@ The project is implemented using **Python** with:
 
 ---
 
-## 📈 Results
+##  Results
 
 ### 🔹 TOPSIS Output
 
@@ -113,7 +113,7 @@ The project is implemented using **Python** with:
 
 ---
 
-### 📊 Visualization
+###  Visualization
 - **Bar Graph:** TOPSIS Scores for all models  
 - **Radar Chart:** Comparative visualization across metrics  
 
@@ -121,7 +121,7 @@ These graphs were plotted using `matplotlib` as part of the notebook.
 
 ---
 
-## 🧩 Interpretation
+##  Interpretation
 - **GPT-Neo** achieved the **highest TOPSIS score (0.716)**, meaning it provides the **best balance** between accuracy, fluency, and computational efficiency.  
 - **T5** ranked second, showing strong performance in BLEU and ROUGE but slightly higher size and complexity.  
 - **GPT-2** performed moderately but with less accuracy.  
@@ -129,7 +129,7 @@ These graphs were plotted using `matplotlib` as part of the notebook.
 
 ---
 
-## 🚀 Conclusion
+##  Conclusion
 Using the **TOPSIS method**, **GPT-Neo** is identified as the **best pre-trained Text Generation model** among GPT-2, T5, BLOOM, and GPT-J.
 
 This approach helps in **objective model selection** when multiple metrics are involved — ensuring balanced decision-making between accuracy, speed, and efficiency.
